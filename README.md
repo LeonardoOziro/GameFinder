@@ -4,7 +4,7 @@
 GameFinder é um aplicativo web que permite aos usuários pesquisarem por jogos, filtrando por nome ou gênero. A aplicação utiliza uma base de dados de jogos para fornecer resultados precisos e relevantes.
 
 ## Como usar
-Você pode testar o GameFinder utilizando o seguinte link: 
+Você pode testar o GameFinder utilizando o seguinte link: https://game-finder-liart.vercel.app/
 
 ## Funcionalidades
 
