@@ -4,7 +4,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #DDDDDD; /* Cor de fundo da página */
+    background-color: #14152b; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -17,7 +17,7 @@ body {
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: #285dc7; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
 }
@@ -89,20 +89,41 @@ section button {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+.item-resultado img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+    margin-right: 10px;
+}
+
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
     color: #45474B; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
+.destaque {
+    color: #494949;
+    font-weight: bold;
+}
+
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
+    background-color: #1e1f3d; /* Cor de fundo do rodapé */
+    color: #285dc7; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
     position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+}
+
+.nao-encontrado {
+    color: #285dc7;
+}
+
+.resultados {
+    color: #285dc7;
 }

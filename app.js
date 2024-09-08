@@ -2,9 +2,9 @@ function pesquisar() {
     let section = document.getElementById("resultados-pesquisa")
 
     let campoPesquisa = document.getElementById("campo-pesquisa").value
-
-    if(!campoPesquisa) {
-        section.innerHTML = "<p>Nada foi encontrado. Você precisa digitar o nome de um atleta ou esporte</p>"
+    
+    if(campoPesquisa.trim().length === 0) {
+        section.innerHTML = "<p class='nao-encontrado'>Nada foi encontrado. Você precisa digitar o nome ou gênero de um jogo</p>"
         return 
     }
 
@@ -25,10 +25,16 @@ function pesquisar() {
 
             resultados += `            
             <div class="item-resultado">
+                <img src="${dado.img}">
                 <h2>
-                    <a href="#" target="_blank">${dado.titulo}</a>
+                    <a href = ${dado.link} target="_blank">${dado.titulo}</a>
                 </h2>
-                <p class="descricao-meta">${dado.descricao}</p>
+                <p class="descricao-meta">
+                    <span class="destaque">Sobre o jogo: </span> ${dado.descricao}
+                </p>
+                <p class="descricao-meta">
+                    <span class="destaque">Gêneros: </span> ${dado.tags}
+                </p>
                 <a href = ${dado.link} target="_blank">Mais informações</a>
             </div>
 `
@@ -36,7 +42,7 @@ function pesquisar() {
     }
 
     if(!resultados) {
-        resultados = "<p>Nada foi encontrado</p>"
+        resultados = "<p class='resultados'>Nada foi encontrado</p>"
     }
 
     section.innerHTML = resultados
